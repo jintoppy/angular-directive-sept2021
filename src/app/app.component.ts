@@ -8,4 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-directive';
   color = 'green';
+  users = [{
+    name: 'Rajnikanth'
+  },
+  {
+    name: 'Ajith'
+  },
+  {
+    name: 'Vijay'
+  }]
 }
