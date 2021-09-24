@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderStyleDirective } from './header-style.directive';
 import { FirstLetterPipe } from './first-letter.pipe';
 import { CharacterCountPipe } from './character-count.pipe';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CharacterCountPipe } from './character-count.pipe';
     CharacterCountPipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
