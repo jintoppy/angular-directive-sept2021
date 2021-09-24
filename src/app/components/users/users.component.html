@@ -1,12 +1,16 @@
 <form #f="ngForm" (ngSubmit)="onAdd(f)">
     <div>
         <label for="name">Name</label>
-        <input id="name" name="name" type="text" ngModel>
+        <input id="name" name="name" type="text" ngModel required minlength="3" maxlength="7">
     </div>
     <div>
         <button>Add</button>
     </div>
 </form>
+
+<div *ngIf="isInvalid && isSubmitted">
+    These are the errors
+</div>
 
 <ul>
     <li *ngFor="let user of users">

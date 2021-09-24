@@ -12,6 +12,8 @@ type User = {
 })
 export class UsersComponent implements OnInit {
   users: User[] = [];
+  isInvalid = false;
+  isSubmitted = false;
   constructor() { }
 
   ngOnInit(): void {
