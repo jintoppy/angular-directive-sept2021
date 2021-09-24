@@ -1,7 +1,10 @@
 
 <ul>
   <li *ngFor="let user of users">
-    {{ user.name | uppercase | characterCount:false }}
+    {{ user.name | characterCount | uppercase }}
+    <p>
+      {{ user.name }}
+    </p>
   </li>
 </ul>
 

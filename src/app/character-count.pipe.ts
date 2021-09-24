@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class CharacterCountPipe implements PipeTransform {
 
-  transform(value: string, convertToCaps: boolean = false): unknown {
+  transform(value: string, convertToCaps: boolean = false): string {
     const totalChars = value.length;
     return `${convertToCaps ? value.toUpperCase() : value }(${totalChars})`;
   }
