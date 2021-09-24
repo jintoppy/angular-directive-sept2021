@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderStyleDirective } from './header-style.directive';
 import { FirstLetterPipe } from './first-letter.pipe';
 import { CharacterCountPipe } from './character-count.pipe';
+import { UsersComponent } from './components/users/users.component';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { CharacterCountPipe } from './character-count.pipe';
     AppComponent,
     HeaderStyleDirective,
     FirstLetterPipe,
-    CharacterCountPipe
+    CharacterCountPipe,
+    UsersComponent
   ],
   imports: [
     BrowserModule,

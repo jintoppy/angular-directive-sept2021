@@ -1,0 +1,15 @@
+<form #f="ngForm" (ngSubmit)="onAdd(f)">
+    <div>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" ngModel>
+    </div>
+    <div>
+        <button>Add</button>
+    </div>
+</form>
+
+<ul>
+    <li *ngFor="let user of users">
+        {{user.name}}
+    </li>
+</ul>
