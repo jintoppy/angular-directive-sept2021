@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-directive';
+
+  usernameVal: string  = '';
   color = 'green';
   users = [{
     name: 'Rajnikanth'
@@ -17,4 +20,8 @@ export class AppComponent {
   {
     name: 'Vijay'
   }]
+
+  onSubmit(ngForm: NgForm){
+    console.log(ngForm.form.value);
+  }
 }
