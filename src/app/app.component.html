@@ -1,7 +1,8 @@
+
 <ul>
-  <li>RAJNIKANTH(10)</li>
-  <li>AJITH(5)</li>
-  <li>VIJAY(5)</li>
+  <li *ngFor="let user of users">
+    {{ user.name | uppercase | characterCount:false }}
+  </li>
 </ul>
 
 <!-- <div [appHeaderStyle]="color" borderstyle="red">
