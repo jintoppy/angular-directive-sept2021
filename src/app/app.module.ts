@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HeaderStyleDirective } from './header-style.directive';
+import { FirstLetterPipe } from './first-letter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderStyleDirective
+    HeaderStyleDirective,
+    FirstLetterPipe
   ],
   imports: [
     BrowserModule
